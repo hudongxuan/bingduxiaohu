@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name-"viewport" content="width=device-width, initial-scale=1/0">
+	<meta http-equiv="X-UA-Compatible content="ie=edge"">
+	<title>爱做病毒的小胡的个人网站</title>
+</head>
+
+<body>
+   <h3>打开哔哩哔哩关注爱做病毒的小胡<h3>
+
+<a href="http://space.bilibili.com/500057267"> 爱做病毒的小胡的个人空间</a>
+<a href="http://space.bilibili.com/500057267">
+   <center><img src="logo.jpg"/ width="100" title="爱做病毒的小胡的个人空间"></center>
+
+   <h4><a href="http://baidu.com" target="_blank"> 百度</a>一下<h4> 
+   <h4><a href="http://sohu.com" target="_blank"> 搜狐</a><h4> 
+   <h4><a href="http://yeah.net" target="_blank"> Yeah邮箱</a><h4>
+   
+   
+   <h4><a href="http://163.com" target="_blank"> 网易</a><h4>
+   <h4><a href="http://qq.com" target="_blank"> 腾讯</a><h4>
+   
+   <center><h4>有点累了？玩会<a href="http://mc.163.com/exp" target="_blank"> 我的世界</a><h4></center>
+   <center><h4>一键直达<a href="http://taobao.com" target="_blank"> 淘宝</a><h4></center>
+    <center><h4>合作伙伴：<a href="https://sean537.github.io/" target="_blank"> 537官方网站</a><h4></center>
+   <center><img src="537工作室.jpg"/ width="100" title="537工作室图标"></center>
+
+   <title>简易计算器</title>
+		<style type="text/css">
+			*{
+				margin: auto;
+				padding: 0px;
+				text-align: center;
+				font-family: "微软雅黑";
+			}
+			.content{
+				border-radius: 10%;
+				width: 400px;
+				height: 650px;
+				background-color: antiquewhite;
+			}
+			.clear{
+				border-radius: 50%;
+				width: 20%;
+				height: 72px;
+				background-color: #FF4500;
+			}
+			#result{
+				margin-top: 24px;
+				font-size: 16px;
+				width: 60%;
+				height: 72px;
+				text-align: left;
+				border-radius: 20px;
+				background-color: #FFE4C4;
+			}
+			.symbol{
+				margin-top: 36px;
+				font-size: xx-large;
+				border-radius: 50%;
+				width: 20%;
+				height: 72px;
+				background-color:bisque;
+			}
+			.number{
+				margin-top: 36px;
+				font-size: xx-large;
+				border-radius: 50%;
+				width: 20%;
+				height: 72px;
+				background-color:beige;
+			}
+			.calculate{
+				margin-top: 36px;
+				font-size: xx-large;
+				border-radius: 50%;
+				width: 20%;
+				height: 72px;
+				background-color: #FF4500;
+			}
+			.content input:hover{
+				box-shadow: 5px 5px 5px #888888;
+			}
+			.content input:active{
+				background-color: #FF0000;
+			}
+		</style>
+		<script type="text/javascript">
+			function clearValue(){
+				document.getElementById("result").value="";
+			}
+			function get(value){
+				document.getElementById("result").value+=value;
+			}
+			function calculate(){
+				var result=0;
+				result=document.getElementById("result").value;
+				document.getElementById("result").value="";
+				document.getElementById("result").value=eval(result);
+			};
+		</script>
+	</head>
+	<body>
+		<div class="banner">
+			<h1>
+			简 易 计 算 器
+			</h1>
+		</div>
+			<br />
+		<div class="content">
+			<input type="button" value="C" class="clear" onclick="clearValue()"/>
+			<input type="text" id="result" readonly="readonly" placeholder="运 算 结 果 显 示"/>
+				<br />
+			<input type="button" value="1" class="number" onclick="get(this.value)"/>
+			<input type="button" value="2" class="number" onclick="get(this.value)"/>
+			<input type="button" value="3" class="number" onclick="get(this.value)"/>
+			<input type="button" value="+" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="4" class="number" onclick="get(this.value)"/>
+			<input type="button" value="5" class="number" onclick="get(this.value)"/>
+			<input type="button" value="6" class="number" onclick="get(this.value)"/>
+			<input type="button" value="-" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="7" class="number" onclick="get(this.value)"/>
+			<input type="button" value="8" class="number" onclick="get(this.value)"/>
+			<input type="button" value="9" class="number" onclick="get(this.value)"/>
+			<input type="button" value="*" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="0" class="number" onclick="get(this.value)"/>
+			<input type="button" value="." class="symbol" onclick="get(this.value)"/>
+			<input type="button" value="/" class="symbol" onclick="get(this.value)"/>
+			<input type="button" value="=" class="calculate" onclick="calculate()"/>
+		</div>
+			<br />
+		<div class="footer">	
+		</div>
